@@ -1,0 +1,75 @@
+/* Styling untuk tampilan tablet (lebar layar 768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .header-logo {
+      font-size: 1.5rem;
+    }
+  
+    .header-list li {
+      margin: 0 10px;
+    }
+  
+    .main {
+      padding-top: 60px;
+    }
+  
+    .section-title {
+      font-size: 1.2rem;
+    }
+  
+    .contents-item {
+      width: 30%;
+    }
+  
+    .contact-form input,
+    .contact-form textarea,
+    .contact-submit {
+      width: 100%;
+    }
+
+  }
+  
+  /* Styling untuk tampilan ponsel (lebar layar di bawah 768px) */
+  @media screen and (max-width: 767px) {
+    .header {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .header-logo {
+      font-size: 1.2rem;
+    }
+  
+    .header-list {
+      display: block;
+      text-align: center;
+    }
+  
+    .header-list li {
+      margin: 10px 0;
+      padding: 5px;
+    }
+  
+    .main {
+      padding-top: 50px;
+    }
+  
+    .section-title {
+      font-size: 1rem;
+    }
+  
+    .contents-item {
+      width: 100%;
+    }
+  
+    .contact-form input,
+    .contact-form textarea,
+    .contact-submit {
+      width: 100%;
+    }
+  }
+  
