@@ -1,8 +1,16 @@
 /* Media Query untuk Smartphone */
 @media screen and (max-width: 600px) {
+  .header {
+    height: 80px;
+    padding: 20px;
+  }
   .header-logo {
     font-size: 26px;
     padding: 10px;
+  }
+
+  .copy-container {
+    width:100%;
   }
 
   .tentang-saya {
@@ -48,6 +56,11 @@
 
 /* Media Query untuk Tablet */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    height: 100px;
+    padding: 30px;
+  }
+  
   .header-logo {
     font-size: 28px;
     padding: 15px;
@@ -93,4 +106,5 @@
     font-size: 24px;
   }
 }
-  
+
+
