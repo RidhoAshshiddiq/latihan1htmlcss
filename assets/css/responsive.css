@@ -1,92 +1,226 @@
-/* Styling untuk tampilan tablet (lebar layar 768px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .header {
-      /* Atur lebar elemen header untuk tampilan tablet */
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .header-logo {
-      /* Atur ukuran font untuk logo pada tampilan tablet */
-      font-size: 1.5rem;
-    }
-  
-    .header-list li {
-      /* Atur margin untuk menu pada tampilan tablet */
-      margin: 0 10px;
-    }
-  
-    .main {
-      /* Atur gaya CSS untuk konten utama (main) pada tampilan tablet */
-      padding-top: 60px;
-    }
-  
-    .section-title {
-      /* Atur ukuran font untuk judul section pada tampilan tablet */
-      font-size: 1.2rem;
-    }
-  
-    .contents-item {
-      /* Atur lebar elemen item pada tampilan tablet */
-      width: 30%;
-    }
-  
-    .contact-form input,
-    .contact-form textarea,
-    .contact-submit {
-      /* Atur lebar elemen form pada tampilan tablet */
-      width: 100%;
-    }
-  
-    /* Atur gaya CSS lainnya untuk tampilan tablet */
+/* Untuk Ukuran Layar 600px atau Kurang (Smartphone) */
+@media screen and (max-width: 600px) {
+  .header {
+    height: auto;
+    padding: 10px;
+    text-align: center;
   }
-  
-  /* Styling untuk tampilan ponsel (lebar layar di bawah 768px) */
-  @media screen and (max-width: 767px) {
-    .header {
-      /* Atur lebar elemen header untuk tampilan ponsel */
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .header-logo {
-      /* Atur ukuran font untuk logo pada tampilan ponsel */
-      font-size: 1.2rem;
-    }
-  
-    .header-list {
-      /* Atur tata letak menu pada tampilan ponsel menjadi vertikal */
-      display: block;
-      text-align: center;
-    }
-  
-    .header-list li {
-      /* Atur margin dan padding untuk menu pada tampilan ponsel */
-      margin: 10px 0;
-      padding: 5px;
-    }
-  
-    .main {
-      /* Atur gaya CSS untuk konten utama (main) pada tampilan ponsel */
-      padding-top: 50px;
-    }
-  
-    .section-title {
-      /* Atur ukuran font untuk judul section pada tampilan ponsel */
-      font-size: 1rem;
-    }
-  
-    .contents-item {
-      /* Atur lebar elemen item pada tampilan ponsel */
-      width: 100%;
-    }
-  
-    .contact-form input,
-    .contact-form textarea,
-    .contact-submit {
-      /* Atur lebar elemen form pada tampilan ponsel */
-      width: 100%;
-    }
-    /* Atur gaya CSS lainnya untuk tampilan ponsel */
+
+  .header-logo {
+    font-size: 24px;
+    padding: 10px 20px;
+    float: none;
   }
+
+  .header-list {
+    float: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .header-list li {
+    padding: 15px 10px;
+    float: none;
+    text-align: center;
+  }
+
+  .main section {
+    padding: 50px;
+  }
+
+  .copy-container h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+
+  .copy-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .copy-container img {
+    height: 100px;
+  }
+
+  .tentang-saya {
+    padding: 50px;
+  }
+
+  .tentang-saya p {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .contents {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .proyek-contoh {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .proyek-contoh img {
+    width: 80%;
+  }
+
+  .section-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .contents-item {
+    float: none;
+    margin: 10px;
+  }
+
+  .contents-item img {
+    width: 100%;
+  }
+
+  .contents-item p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    padding: 50px;
+  }
+
+  .contact-form form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    border: 1px solid #dee7ec;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .footer-list {
+    float: none;
+  }
+
+  .footer-list li {
+    padding-bottom: 5px;
+  }
+}
+
+/* Untuk Ukuran Layar 601px hingga 1024px (Tablet) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header-logo {
+    font-size: 32px;
+  }
+
+  .header-list li {
+    padding: 25px 15px;
+  }
+
+  .copy-container h1 {
+    font-size: 120px;
+  }
+
+  .copy-container h2 {
+    font-size: 32px;
+  }
+
+  .copy-container img {
+    height: 120px;
+  }
+
+  .tentang-saya {
+    padding: 80px;
+  }
+
+  .tentang-saya p {
+    font-size: 20px;
+  }
+
+  .contents {
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .proyek-contoh {
+    flex-direction: row;
+    padding-bottom: 100px;
+  }
+
+  .proyek-contoh img {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contents-item {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .contents-item img {
+    width: 100%;
+  }
+
+  .contents-item p {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .contact-form {
+    padding: 80px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .contact-submit {
+    width: 80%;
+  }
+
+  .footer {
+    height: 100px;
+    padding: 30px;
+  }
+
+  .footer-logo {
+    font-size: 28px;
+  }
+}
   
