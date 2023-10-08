@@ -63,28 +63,24 @@
     padding-bottom: 50px;
   }
 
-  .proyek-contoh img {
-    width: 80%;
-  }
-
   .section-title {
     font-size: 24px;
     padding-bottom: 10px;
     margin-bottom: 5px;
   }
 
-  .contents-item {
-    float: none;
-    margin: 10px;
+  .slides .slide {
+    flex: 0 0 100%; 
+    margin-right: 0;
+    margin-left: 0;
   }
 
-  .contents-item img {
-    width: 100%;
+  .slides .slide img {
+    width: 100%; 
   }
 
-  .contents-item p {
-    font-size: 18px;
-    margin-top: 20px;
+  .slides .slide p {
+    margin-left: 0; 
   }
 
   .contact-form {
@@ -175,30 +171,26 @@
     padding-bottom: 100px;
   }
 
-  .proyek-contoh img {
-    width: 100%;
-  }
-
   .section-title {
     font-size: 28px;
     padding-bottom: 15px;
     margin-bottom: 10px;
   }
 
-  .contents-item {
-    float: left;
-    margin-right: 30px;
-    margin-left: 30px;
+  .slides .slide {
+    flex: 0 0 48%; 
+    margin-right: 2%; 
+    margin-left: 2%;
   }
 
-  .contents-item img {
-    width: 100%;
+  .slides .slide img {
+    width: 100%; 
   }
 
-  .contents-item p {
-    font-size: 22px;
-    margin-top: 30px;
+  .slides .slide p {
+    margin-left: 0; 
   }
+
 
   .contact-form {
     padding: 80px;
@@ -223,4 +215,9 @@
     font-size: 28px;
   }
 }
-  
+
+/* Untuk Ukuran Layar 1025px atau Lebih Besar (Desktop) */
+@media screen and (min-width: 1025px) {
+  /* Tidak ada perubahan tampilan untuk ukuran desktop pada contoh ini */
+}
+
