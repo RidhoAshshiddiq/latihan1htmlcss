@@ -50,7 +50,7 @@ li {
 
 .copy-container {
     text-align:center;
-    overflow: hidden; /* Pastikan overflow diatur ke "hidden" untuk menghilangkan efek gambar yang keluar dari container saat di-zoom */
+    overflow: hidden;
 }
 
 .copy-container h1 {
@@ -76,6 +76,7 @@ li {
 .tentang-saya{
     background-color: #b9c1c56c;
     padding:100px;
+    margin-top: -50px;
 
 }
 
@@ -83,59 +84,121 @@ li {
     text-align: center;
     padding-bottom:30px;
 }
+
 .contents {
-    height:500px;
-    margin-top:100px;
-    padding-top:50px;
-    
-    
-}
-
-.proyek-contoh {
-    display:flex;
-    flex-direction: row;
-    padding-bottom:100px;
-}
-
-.proyek-contoh img {
-    width:100%;
+    height:600px;
+    margin-top:50px;
     padding-top:20px;
+
 }
+
+
+.slides {
+    width: 100%;
+    position: relative;
+    display: flex; 
+    overflow: hidden; 
+}
+
+.slides .slide {
+    flex: 0 0 30%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.slides .slide img {
+    width: 80%;
+    animation-name: fade;
+    animation-duration: 1s;
+    padding-bottom: 30px;
+    padding-top:40px;
+}
+
+.slides .slide p {
+    margin-left: 140px;
+}
+
+
+.slides .navigation{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+} 
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+@keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+}
+
+ .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: black;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+    width: 80%;
+    position: relative;
+    margin-top: -100px;
+    cursor: pointer;
+} 
+
+/* .image-container {
+    overflow: hidden;
+    position: relative;
+} */
+
+.image-container img {
+    transition: transform 0.3s ease;
+    width:100%; 
+    cursor:pointer;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+
+
 .section-title {
     font-size:30px;
     padding-bottom:15px;
     margin-bottom:5px; 
-
-    
 }
 
-.contents-item {
-    float:left;
-    margin-right:30px;
-    margin-left:30px;
-    text-align: center;
-}
-
-/* Gaya gambar */
-.contents-item img {
-    width:100%; /* Gunakan lebar 100% agar gambar mengisi seluruh container */
-    transition: transform 0.3s; /* Efek transisi transformasi saat hover */
-    cursor:pointer;
-}
-
-/* Efek zoom in saat hover */
-.contents-item img:hover {
-    transform: scale(1.2); /* Skala gambar menjadi 1.1 kali dari ukuran aslinya saat hover */
-}
-
-.contents-item p {
-    font-size:24px;
-    margin-top:30px;
-}
 
 .contact-form {
     background-color: #b9c1c56c;
     padding:100px;
+    margin-top:-50px;
 }
 .contact-form form{
     padding-top:10px;
@@ -168,7 +231,7 @@ input, textarea {
 
 /* Gaya tombol kirim */
 .contact-submit {
-    background-color:rgba(236, 205, 79, 0.814);/* Warna latar belakang tombol saat tidak ditekan */
+    background-color:rgba(236, 205, 79, 0.814);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -177,8 +240,47 @@ input, textarea {
   
   /* Efek tombol ketika ditekan */
   .contact-submit:active {
-    background-color:rgba(51, 42, 5, 0.814); /* Warna latar belakang tombol saat ditekan */
+    background-color:rgba(51, 42, 5, 0.814); 
   }
+
+
+.faq-section {
+    margin-top: 20px;
+}
+.faq-title {
+    font-size:30px;
+    padding-bottom:15px;
+    margin-bottom:5px; 
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.faq-item.active .faq-question {
+    background-color: #e0e0e0;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
 
 .footer {
     background-color:rgba(82, 80, 80, 0.763);
@@ -207,8 +309,3 @@ input, textarea {
     padding-bottom:10px;
 }
 
-
-.footer-list li {
-    padding:0px;
-    padding-bottom:10px;
-}
