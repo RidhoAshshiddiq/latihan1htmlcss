@@ -19,8 +19,6 @@ function validateForm() {
         return;
     }
 
-    // Jika validasi berhasil, Anda dapat mengirim formulir atau melakukan tindakan lain
-    // Misalnya, Anda bisa mengirim data ke server dengan menggunakan AJAX.
-    // Namun, dalam contoh ini, kita hanya menunjukkan pesan sukses.
+    // Namun, dalam contoh ini,  hanya menunjukkan pesan sukses.
     alert('Formulir berhasil dikirim!');
 }
